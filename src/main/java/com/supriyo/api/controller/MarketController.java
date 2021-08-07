@@ -20,47 +20,47 @@ import com.supriyo.api.model.Market;
 public class MarketController {
 
 	@Autowired
-	private MarketService service;
+	private MarketService services;
 
 	@PostMapping("/addProduct")
 	public Market SaveProduct(Market product) {
 
-		return service.SaveItem(product);
+		return services.SaveItem(product);
 	}
 	
 	@PostMapping("/addProducts")
 	public List<Market> SaveProducts(List<Market> products) {
 
-		return service.SaveItems(products);
+		return services.SaveItems(products);
 	}
 	
 	@GetMapping("/findAllProducts")
 	public List<Market> findAllProducts() {
 
-		return service.GetItems();
+		return services.GetItems();
 	}
 	
 	@GetMapping("/findProduct/{id}")
 	public Market findProductbyId(@PathVariable int id) {
 
-		return service.GetItemByID(id);
+		return services.GetItemByID(id);
 	}
 	
 	@GetMapping("/findProduct/{name}")
 	public List<Market> findProductbyName(@PathVariable String name) {
 
-		return service.GetItemsbyName(name);
+		return services.GetItemsbyName(name);
 	}
 	
 	@PutMapping("/update")
 	public Market UpdateProduct(@RequestBody Market product) {
-		return service.UpdateProduct(product);
+		return services.UpdateProduct(product);
 	}
 	
 	@DeleteMapping("/remove/{id}")
 	public String deleteProduct(@PathVariable int id) {
 		
-		return service.DeleteProduct(id);
+		return services.DeleteProduct(id);
 	}
 	
 	
