@@ -29,13 +29,13 @@ public class MarketController {
 	}
 	
 	@PostMapping("/addProducts")
-	public List<Market> SaveProducts(List<Market> products) {
+	public Iterable<Market> SaveProducts(List<Market> products) {
 
 		return services.SaveItems(products);
 	}
 	
 	@GetMapping("/findAllProducts")
-	public List<Market> findAllProducts() {
+	public Iterable<Market> findAllProducts() {
 
 		return services.GetItems();
 	}

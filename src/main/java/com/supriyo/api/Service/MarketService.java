@@ -17,19 +17,19 @@ public class MarketService {
 		return repo.save(market);
 	}
 
-	public List<Market> SaveItems(List<Market> markets) {
+	public Iterable<Market> SaveItems(List<Market> markets) {
 
 		return repo.saveAll(markets);
 	}
 	
-	public List<Market> GetItems(){
+	public Iterable<Market> GetItems(){
 		
 		return repo.findAll();
 	}
 	
 	public Market GetItemByID(int id) {
 		
-		return repo.getById(id);
+		return repo.findById(id).orElse(null);
 	}
 	
 	public List<Market> GetItemsbyName(String name){

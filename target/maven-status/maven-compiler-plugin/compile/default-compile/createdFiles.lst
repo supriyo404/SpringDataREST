@@ -1,0 +1,5 @@
+com\supriyo\api\Service\MarketService.class
+com\supriyo\api\repo\MarketRepo.class
+com\supriyo\api\SpringDataRestApplication.class
+com\supriyo\api\model\Market.class
+com\supriyo\api\controller\MarketController.class

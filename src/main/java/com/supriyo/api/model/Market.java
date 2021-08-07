@@ -7,8 +7,9 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name="Market")
+@Table(name="Market_table")
 public class Market {
+	
 	@Id
 	@GeneratedValue
 	private int Item_ID;
