@@ -3,8 +3,8 @@ package com.supriyo.api.Service;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.supriyo.api.MarketRepo;
 import com.supriyo.api.model.Market;
+import com.supriyo.api.repo.MarketRepo;
 
 @Service
 public class MarketService {

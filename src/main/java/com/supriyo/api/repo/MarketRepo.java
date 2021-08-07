@@ -1,10 +1,8 @@
-package com.supriyo.api;
+package com.supriyo.api.repo;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-
-
 import com.supriyo.api.model.Market;
 
 
